@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 require("dotenv").config();
 
-const Port = process.env.Port || 3001
+const Port = process.env.Port || 8081
 
 
 
@@ -17,6 +17,6 @@ app.get("/", (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log("Server listening on port 3000");
+app.listen(8080, () => {
+  console.log("Server listening on port 8080");
 });
